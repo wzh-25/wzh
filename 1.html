@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        .top-right-link {
+            position: fixed;
+            top: auto;
+            right: 0%;
+            padding: 1% 1%;
+            background-color: #f0f0f0;
+            /* border-radius: 4px; */
+            text-decoration: none;
+            color: #333;
+        }
+        
+        #main-video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        @media (max-width: 480px) {
+    .mobile-back-link {
+
+      display: block;
+    }}
+    </style>
+</head>
+<body>
+    <!-- 改进的返回链接 -->
+    <a href="3.0.html" class="top-right-link" aria-label="返回上一页">← 返回上一页</a>
+  
+    <!-- 改进的视频元素 -->
+    <video controls id="main-video">
+        <source src="1.mp4" type="video/mp4">
+        <source src="1.webm" type="video/webm">
+        Your browser does not support the HTML5 video tag.
+    </video>
+
+</body>
+</html>
+

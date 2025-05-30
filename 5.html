@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        .top-right-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 8px 12px;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            color: #333;
+            border-radius:5px; 
+        }
+        
+        .top-right-link::before {
+            content:"← "; 
+        }
+        
+        #main-video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        @media (max-width:480px){
+             body{
+                 padding-top:40px; /*为固定链接留出空间*/
+             }
+             .top-right-link{
+                 font-size:14px; /*移动端调整大小*/
+             }
+         }    
+     </style>
+</head>
+<body>
+     <!--改进的返回链接 -->
+     <a href="2.html" class="top-right-link" aria-label="Back">Back</a>
+     
+     <!--改进的视频元素 -->
+     <video controls id="main-video" preload="metadata" width="1280" height="720">
+         <source src="古灶.mp4" type="video/mp4">
+         <source src="古灶.webm" type="video/webm">
+         Your browser does not support HTML5 video.
+     </video>
+     
+</body>
+</html>
+
